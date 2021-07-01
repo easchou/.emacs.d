@@ -1,7 +1,7 @@
 
 
 (global-set-key [delete] 'delete-char)
-(global-set-key [f1] 'find-file)
+(global-set-key [f1] 'counsel-git)
 (global-set-key [f3] 'grep-find)
 (global-set-key [f4] 'goto-line)
 (global-set-key [f5] 'dired)

@@ -1,13 +1,13 @@
 
 ;; ----- smex-history -----
 (
+ menu-bar-mode
+ delete-selection-mode
+ load-theme
+ dired
+ linum-mode
  ido-switch-buffer
  ido-mode
- dired
- dired-find-file
- menu-bar-mode
- shrink-window
- describe-variable
 )
 
 ;; ----- smex-data -----
@@ -18,12 +18,14 @@
  (customize . 1)
  (customize-group . 2)
  (package-list-packages . 1)
- (linum-mode . 1)
+ (linum-mode . 2)
  (describe-variable . 1)
  (shrink-window . 4)
- (menu-bar-mode . 1)
- (dired . 3)
+ (menu-bar-mode . 2)
+ (dired . 6)
  (dired-find-file . 1)
  (ido-mode . 1)
  (ido-switch-buffer . 1)
+ (load-theme . 1)
+ (delete-selection-mode . 1)
 )
