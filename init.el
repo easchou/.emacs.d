@@ -30,6 +30,7 @@
 (setq org-src-fontify-natively 1)
 ;;;;;;;
 (setq-default cursor-type 'bar)
+(setq auto-save-default nil)
 (setq make-backup-files nil)
 
 (when (>= emacs-major-version 24)
@@ -43,11 +44,15 @@
 (defvar eason/packages '(
 			company
 			monokai-theme
+			solarized-theme
+			zenburn-theme
 			hungry-delete
 			smex
 			swiper
 			counsel
 			smartparens
+			popwin
+			helm
 			) "Default packages")
 (setq package-selected-packages eason/packages)
 
@@ -65,7 +70,7 @@
 
 
 (global-company-mode t)
-(load-theme 'monokai)
+(load-theme 'zenburn t)
 (require 'hungry-delete)
 (global-hungry-delete-mode)
 ;(require 'smex)
@@ -84,7 +89,10 @@
 (global-set-key (kbd "C-h v") 'counsel-describe-variable)
 
 (require 'smartparens-config)
-(add-hook 'emacs-lisp-mode 'smartparens-mode)
+;(add-hook 'emacs-lisp-mode 'smartparens-mode)
+(smartparens-global-mode t)
+(require 'popwin)
+(popwin-mode t)
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
@@ -93,6 +101,8 @@
  ;; If there is more than one, they won't work right.
  '(custom-safe-themes
    '("d9646b131c4aa37f01f909fbdd5a9099389518eb68f25277ed19ba99adeb7279" "d50ca1c2d916d0763666ce636b42cfaef7d82f88500517beab0496035745e983" default))
+ '(package-selected-packages
+   '(projectile flycheck-irony flycheck rtags irony sr-speedbar helm-gtags company monokai-theme solarized-theme zenburn-theme hungry-delete smex swiper counsel smartparens popwin))
  '(tool-bar-mode nil))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.

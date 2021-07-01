@@ -1,0 +1,21 @@
+
+;; ----- smex-history -----
+(
+ package-list-packages
+ customize-group
+ customize
+ cd
+ find-function
+ find-variable
+ 5x5
+)
+
+;; ----- smex-data -----
+(
+ (find-variable . 1)
+ (find-function . 1)
+ (cd . 1)
+ (customize . 1)
+ (customize-group . 2)
+ (package-list-packages . 1)
+)
