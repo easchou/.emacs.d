@@ -15,7 +15,7 @@
 ;;(tool-bar-mode -1)
 (scroll-bar-mode -1)
 (electric-indent-mode -1)
-(global-linum-mode 1)
+;(global-linum-mode 1)
 (delete-selection-mode 1)
 (setq inhibit-splash-screen 1)
 (global-hl-line-mode t)
@@ -32,6 +32,13 @@
 (setq-default cursor-type 'bar)
 (setq auto-save-default nil)
 (setq make-backup-files nil)
+(abbrev-mode t)
+(define-abbrev-table 'global-abbrev-table '(
+					    ;; signature
+					    ("8id" "sdfzilonsdlkjsdflsjdflkjsdlf")
+					     ;; emacs regexp
+					     ))
+
 
 (when (>= emacs-major-version 24)
   (require 'package)
@@ -68,7 +75,7 @@
     (when (not (package-installed-p pkg))
       (package-install pkg))))
 
-
+(global-auto-revert-mode)
 (global-company-mode t)
 (load-theme 'zenburn t)
 (require 'hungry-delete)

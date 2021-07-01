@@ -1,13 +1,13 @@
 
 ;; ----- smex-history -----
 (
- package-list-packages
- customize-group
- customize
- cd
- find-function
- find-variable
- 5x5
+ ido-switch-buffer
+ ido-mode
+ dired
+ dired-find-file
+ menu-bar-mode
+ shrink-window
+ describe-variable
 )
 
 ;; ----- smex-data -----
@@ -18,4 +18,12 @@
  (customize . 1)
  (customize-group . 2)
  (package-list-packages . 1)
+ (linum-mode . 1)
+ (describe-variable . 1)
+ (shrink-window . 4)
+ (menu-bar-mode . 1)
+ (dired . 3)
+ (dired-find-file . 1)
+ (ido-mode . 1)
+ (ido-switch-buffer . 1)
 )
