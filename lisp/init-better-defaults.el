@@ -21,5 +21,12 @@
 (delete-selection-mode 1)
 (setq-default cursor-type 'bar)
 
+(set 'yes-or-no-p 'y-or-n-p)
+(setq dired-recursive-copies 'always)
+(setq dired-recursive-deletes 'always)
 
+;; Day4 Open one dird buffer
+(put 'dired-find-alternate-file 'disabled nil)
+(require 'dired)
+(define-key dired-mode-map (kbd "RET") 'dired-find-alternate-file)
 (provide 'init-better-defaults)

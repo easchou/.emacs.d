@@ -3,12 +3,8 @@
 (require 'init-ui)
 (require 'init-better-defaults)
 (require 'init-keybindings)
+(require 'init-org)
 
-
-;;;;;;; org mode
-(require 'org)
-(setq org-src-fontify-natively 1)
-;;;;;;;
 
 (setq custom-file (expand-file-name "lisp/custom.el" user-emacs-directory))
 

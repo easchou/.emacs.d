@@ -58,7 +58,7 @@
 ;(global-set-key (kbd "C-h f") 'counsel-describe-function)
 ;(global-set-key (kbd "C-h v") 'counsel-describe-variable)
 
-;(add-hook 'emacs-lisp-mode 'smartparens-mode)
+(require 'smartparens-config)
 (smartparens-global-mode t)
 
 (require 'popwin)
