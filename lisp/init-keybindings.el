@@ -15,5 +15,6 @@
   (load-file "~/.emacs.d/init.el"))
 (global-set-key [f2] 'load-init-file)
 
-
+(with-eval-after-load 'dired
+  (define-key dired-mode-map (kbd "RET") 'dired-find-alternate-file))
 (provide 'init-keybindings)

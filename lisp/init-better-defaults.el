@@ -27,6 +27,7 @@
 
 ;; Day4 Open one dird buffer
 (put 'dired-find-alternate-file 'disabled nil)
-(require 'dired)
-(define-key dired-mode-map (kbd "RET") 'dired-find-alternate-file)
+(require 'dired-x)
+(setq dired-dwim-target t)
+
 (provide 'init-better-defaults)
