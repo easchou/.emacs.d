@@ -2,10 +2,11 @@
 (abbrev-mode t)
 (define-abbrev-table 'global-abbrev-table '(
 					    ;; signature
-					    ("8id" "sdfzilonsdlkjsdflsjdflkjsdlf")
+					    ("#++" "BEGIN_SRC emacs-lisp")
+					    ("#+-" "#+END_SRC")
 					     ;; emacs regexp
 					     ))
-
+ 
 (setq auto-save-default nil)
 
 (setq make-backup-files nil)
@@ -30,4 +31,8 @@
 (require 'dired-x)
 (setq dired-dwim-target t)
 
+(setq auto-mode-alist
+      (append 
+       '(("\\.js\\'" . js2-mode))
+       auto-mode-alist))
 (provide 'init-better-defaults)

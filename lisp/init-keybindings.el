@@ -1,5 +1,3 @@
-
-
 (global-set-key [delete] 'delete-char)
 (global-set-key [f1] 'counsel-git)
 (global-set-key [f3] 'grep-find)
@@ -9,6 +7,15 @@
 (global-set-key [f7] 'compile)
 (global-set-key [f8] 'shell)
 (global-set-key "\C-x\C-r" 'recentf-open-files)
+(global-set-key "\C-s" 'swiper)
+(global-set-key (kbd "C-c C-r") 'ivy-resume)
+(global-set-key (kbd "M-x") 'counsel-M-x)
+(global-set-key (kbd "C-x C-f") 'counsel-find-file)
+(global-set-key (kbd "C-h f") 'counsel-describe-function)
+(global-set-key (kbd "C-h y") 'counsel-describe-symbol)
+(global-set-key (kbd "C-h v") 'counsel-describe-variable)
+(global-set-key (kbd "C-h C-f") 'find-function)
+
 
 (defun load-init-file()
   (interactive)

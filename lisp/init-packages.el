@@ -12,12 +12,14 @@
 			solarized-theme
 			zenburn-theme
 			hungry-delete
-			smex
 			swiper
 			counsel
 			smartparens
 			popwin
 			helm
+			js2-mode
+			nodejs-repl
+			exec-path-from-shell
 			) "Default packages")
 
 (setq package-selected-packages eason/packages)
@@ -46,23 +48,16 @@
 ;(smex-initialize)
 ;(global-set-key (kbd "M-x") 'smex)
 
-(ivy-mode)
-;(setq ivy-use-virtual-buffers t)
-;(setq enable-recursive-minibuffers t)
+(ivy-mode 1)
+(setq ivy-use-virtual-buffers t)
+(setq enable-recursive-minibuffers t)
 ;; enable this if you want `swiper' to use it
 ;; (setq search-default-mode #'char-fold-to-regexp)
-(global-set-key "\C-s" 'swiper)
-;(global-set-key (kbd "C-c C-r") 'ivy-resume)
-;(global-set-key (kbd "M-x") 'counsel-M-x)
-;(global-set-key (kbd "C-x C-f") 'counsel-find-file)
-;(global-set-key (kbd "C-h f") 'counsel-describe-function)
-;(global-set-key (kbd "C-h v") 'counsel-describe-variable)
 
 (require 'smartparens-config)
 (smartparens-global-mode t)
 
 (require 'popwin)
 (popwin-mode t)
-
-
+(exec-path-from-shell-initialize)
 (provide 'init-packages)
