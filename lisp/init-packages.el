@@ -7,7 +7,6 @@
 ;; common lisp extention
 (require 'cl)
 (defvar eason/packages '(
-			company
 			monokai-theme
 			solarized-theme
 			zenburn-theme
@@ -41,7 +40,7 @@
       (package-install pkg))))
 
 
-(global-company-mode t)
+;(global-company-mode t)
 
 (load-theme 'monokai t)
 
