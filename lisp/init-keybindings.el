@@ -15,8 +15,10 @@
 (global-set-key (kbd "C-h y") 'counsel-describe-symbol)
 (global-set-key (kbd "C-h v") 'counsel-describe-variable)
 (global-set-key (kbd "C-h C-f") 'find-function)
-
-
+(global-set-key (kbd "M-2") 'er/expand-region)
+(global-set-key (kbd "C-2") 'set-mark-command)
+(global-set-key (kbd "M-s i") 'imenu)
+(global-set-key (kbd "M-s e") 'iedit-mode)
 (defun load-init-file()
   (interactive)
   (load-file "~/.emacs.d/init.el"))
