@@ -1,13 +1,8 @@
-  (add-to-list 'load-path "~/.emacs.d/lisp") 
-(require 'init-packages)
-(require 'init-ui)
-(require 'init-better-defaults)
-(require 'init-keybindings)
-(require 'init-org)
-
-
-(setq custom-file (expand-file-name "lisp/custom.el" user-emacs-directory))
-
+(package-initialize)
+(require 'org-install)
+(require 'ob-tangle)
+(setq debug-on-error t)
+(org-babel-load-file (expand-file-name "eason.org" user-emacs-directory))
 
 
 

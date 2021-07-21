@@ -42,4 +42,8 @@
   (call-interactively 'occur))
 (global-set-key (kbd "M-s o") 'occur-dwim)
 
+;; company speedup
+(setq company-dabbrev-downcase 0)
+(setq company-idle-delay 0.5)
+
 (provide 'init-better-defaults)

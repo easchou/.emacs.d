@@ -40,8 +40,6 @@
       (package-install pkg))))
 
 
-;(global-company-mode t)
-
 (load-theme 'monokai t)
 
 (require 'hungry-delete)
@@ -76,4 +74,9 @@
 (require 'popwin)
 (popwin-mode t)
 (exec-path-from-shell-initialize)
+
+;; company
+(global-company-mode t)
+'(company-global-modes '(not gud-mode))
+
 (provide 'init-packages)
